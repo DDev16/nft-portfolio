@@ -5,15 +5,18 @@ import Why from './components/Why';
 import About from './components/About';
 import Roadmap from './components/Roadmap';
 import Team from './components/Team';
-import Collection from './components/Collection';
+import Collection from './components/DappVault';
 import QnA from './components/QnA';
 import Footer from './components/Footer';
 import Break from './components/Break';
+import Atom from './components/atom';
+
 
 function HomePage() {
   return (
     <div>
       <Navbar />
+      {/* <Atom /> */}
       <Hero id="hero" />
       <Break />
       <Why id="why" />
@@ -22,9 +25,9 @@ function HomePage() {
       <Break />
       <Roadmap id="roadmap" />
       <Break />
-      <Team id="team" />
-      <Break />
       <Collection id="collection" />
+      <Break />
+      <Team id="team" />
       <Break />
       <QnA id="qna" />
       <Break />

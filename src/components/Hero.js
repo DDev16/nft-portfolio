@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from 'react';
-import './Hero.css';
+import './Hero.scss';
 
 export default function Hero() {
 
@@ -28,26 +28,26 @@ export default function Hero() {
           </svg>
         </div>
         <div className="content">
-          <h1>collect & sell<br /><span>super rare nfts</span></h1>
+          <h1>Explore<br /><span>Chaos Creations</span></h1>
 
           <div className="container panel">
             <div className="row">
               <div className="col">
-                <img className="img secondary-image" src={require('../images/01.jpg')} alt="01" />
+                <img className="img secondary-image" src={require('../images/_4a719ced-a7f5-40e9-84d1-572f006d2efc.jpeg')} alt="01" />
               </div>
               <div className="col">
-                <img className="img tertiary-image" src={require('../images/02.jpg')} alt="02" />
-                <img className="img tertiary-image" src={require('../images/03.jpg')} alt="03" />
+                <img className="img tertiary-image" src={require('../images/_8e37e493-cb8b-42f4-9e9d-19311c8c4dbe.jpeg')} alt="02" />
+                <img className="img tertiary-image" src={require('../images/_83e1d735-88f6-4f51-9180-29df6a0545a9.jpeg')} alt="03" />
               </div>
               <div className="col">
-                <img className="img main-image" src={require('../images/04.jpg')} alt="04" />
+                <img className="img main-image" src={require('../images/ezgif.com-gif-maker (25).gif')} alt="04" />
               </div>
               <div className="col">
-                <img className="img tertiary-image" src={require('../images/05.jpg')} alt="05" />
-                <img className="img tertiary-image" src={require('../images/06.jpg')} alt="06" />
+                <img className="img tertiary-image" src={require('../images/ezgif.com-gif-maker (27).gif')} alt="05" />
+                <img className="img tertiary-image" src={require('../images/asdkjansdkja.JPG')} alt="06" />
               </div>
               <div className="col">
-                <img className="img secondary-image" src={require('../images/07.jpg')} alt="07" />
+                <img className="img secondary-image" src={require('../images/dsadasdasfdasfm,;sdf,..JPG')} alt="07" />
               </div>
             </div>
           </div>

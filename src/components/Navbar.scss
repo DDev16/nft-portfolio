@@ -1,0 +1,124 @@
+// .Navbar {
+//   max-width: 1200px;
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   transition: background-color 0.3s ease;
+// }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+
+.Navbar .navbar {
+  background-color: rgba(218, 218, 218, 0.247);
+  width: 100%;
+}
+
+.Navbar .navbar-brand {
+  width: 100px;
+}
+
+.Navbar .navbar-toggler {
+  border: box-sizing(0, 0, 0, 0);
+  background-color: transparent;
+  outline: none;
+}
+
+/* Updated styles for .navbar-toggler in sticky navbar */
+.Navbar.sticky .navbar-toggler {
+  color: #fff; /* Make the button visible against white background */
+  z-index: 1010;  /* Ensure it's above other elements */
+}
+
+.Navbar .navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.Navbar .navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.Navbar .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P';
+
+}
+
+.Navbar .nav-link:hover {
+  color: rgb(46, 139, 245);
+  text-shadow: 0 0 10px rgba(46, 139, 245, 0.4);
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn .bi {
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn .bi:hover {
+  color: rgb(61, 126, 245);
+}
+
+// /* Sticky Styles */
+// .Navbar.sticky {
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: rgba(255, 255, 255, 0.76);
+//   z-index: 1000;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }
+
+
+// .Navbar.sticky .navbar {
+//   background-color: transparent;
+// }
+
+// .Navbar.sticky .navbar-brand,
+// .Navbar.sticky .navbar-nav .nav-item,
+// .Navbar.sticky .btn .bi {
+//   color: #161616;
+// }
+
+// .Navbar.sticky .nav-link:hover,
+// .Navbar.sticky .btn .bi:hover {
+//   color: rgb(165, 42, 223);
+//   text-shadow: 0 0 10px rgba(162, 40, 219, 0.4);}
+
+  
+// /* Responsive styles */
+// @media (max-width: 991px) {
+//   .navbar-nav {
+//     flex-direction: column;
+//   }
+
+//   .nav-link {
+//     margin-bottom: 10px;
+//   }
+
+//   /* Update the position of the navbar-toggler */
+//   .Navbar.sticky .navbar-toggler {
+//     position: fixed;
+//     top: 10px; /* Adjust as needed */
+//     left: 0px; /* Adjust as needed */
+//   }
+// }

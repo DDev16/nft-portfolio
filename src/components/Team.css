@@ -7,7 +7,7 @@
 
 .team h1 {
   font-family: 'Poppins', sans-serif;
-  color: #000;
+  color: #fff;
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
@@ -86,7 +86,7 @@
 .team-member-details h3 {
   font-size: 60px;
   font-weight: 700;
-  color: #111111;
+  color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   line-height: 1;
   margin: 0;
@@ -112,7 +112,7 @@
 
 .social-links a {
   display: inline-block;
-  color: #333;
+  color: #fff;
   font-size: 24px;
   margin: 0 10px;
 }
@@ -202,11 +202,12 @@
   .team-members-container {
     flex-direction: column;
     flex-wrap: wrap;
+
   }
 
   .team-member {
     flex: 0 0 50%;
-    height: auto;
+    height: 300px;
   }
 
   .team-member-details h3 {

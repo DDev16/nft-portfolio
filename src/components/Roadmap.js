@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import MetamaskLogo from '../images/metamask.svg';
-import BitgoLogo from '../images/bitgo.svg';
-import CoinbaseLogo from '../images/coinbase.svg';
-import TrustWalletLogo from '../images/trustwallet.svg';
-import ExodusLogo from '../images/exodus.svg';
-import './Roadmap.css';
+import MetamaskLogo from '../images/1683020860metamask-logo-white.png';
+import BitgoLogo from '../images/reactjs-ar21.png';
+import CoinbaseLogo from '../images/banner_trans.png';
+import TrustWalletLogo from '../images/blender_logo_socket.png';
+import ExodusLogo from '../images/6315e510ede28c3c656a27a5_solidity + check (black).webp';
+import './Roadmap.scss';
 
 export default function Roadmap() {
   const [activeItem, setActiveItem] = useState('NEW NFTS');
@@ -16,7 +16,7 @@ export default function Roadmap() {
   return (
     <section className="roadmap">
       <div className="container-fluid">
-        <h1 className="roadmap-title">NERKO'S <span>ROADMAP</span></h1>
+        <h1 className="roadmap-title">Chaos <span>ROADMAP</span></h1>
         <div className="row">
           <div className="col-md-4">
             <div className="text-column">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./QnA.css";
+import "./QnA.scss";
 
 export default function QnA() {
   // Separate states for each card's active question
