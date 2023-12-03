@@ -1,11 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../images/4.png';
+import logo from '../images/newlogo.png';
 import './Navbar.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
+import music from "../images/music.mp3";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -41,8 +56,10 @@ function Navbar() {
             aria-controls="navbarText"
             aria-expanded={isMenuOpen ? 'true' : 'false'}
             onClick={handleMenuToggle}
+            style={{ backgroundColor: 'white', borderColor: 'white' }}
+
           >
-            <span className="navbar-toggler-icon"></span>
+  <span className="navbar-toggler-icon custom-toggler-icon"></span>
           </button>
           <div className={`offcanvas offcanvas-end ${isMenuOpen ? 'show' : ''}`} id="navbarText" tabIndex="-1">
             <div className="offcanvas-header">
@@ -96,9 +113,16 @@ function Navbar() {
                     onClick={handleCloseMenu}
                     className="nav-link"
                   >
-                    Collection
+                    Dapp Vault
                   </Link>
                 </li>
+                <audio ref={audioRef}>
+        <source src={music} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <button onClick={togglePlay} className="play-button">
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+      </button>
               </ul>
               <div className="d-flex align-items-center ms-lg-4">
                 <a href="https://twitter.com" className="btn">
@@ -111,7 +135,9 @@ function Navbar() {
             </div>
           </div>
         </div>
+        
       </nav>
+      
     </section>
   );
 }

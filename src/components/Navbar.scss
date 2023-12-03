@@ -1,10 +1,4 @@
-// .Navbar {
-//   max-width: 1200px;
-//   width: 100%;
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   transition: background-color 0.3s ease;
-// }
+
 
 
 
@@ -14,7 +8,7 @@
 
 
 .Navbar .navbar {
-  background-color: rgba(218, 218, 218, 0.247);
+  background-color: rgba(165, 68, 255, 0.247);
   width: 100%;
 }
 
@@ -26,23 +20,46 @@
   border: box-sizing(0, 0, 0, 0);
   background-color: transparent;
   outline: none;
+  color:  #ffffff;
 }
 
-/* Updated styles for .navbar-toggler in sticky navbar */
-.Navbar.sticky .navbar-toggler {
-  color: #fff; /* Make the button visible against white background */
-  z-index: 1010;  /* Ensure it's above other elements */
+.play-button {
+  background-color: #ae00ff; /* Bright red, change as needed */
+  color: white;
+  border: 3px solid black;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 black;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive; /* A font that mimics retro gaming styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Navbar .navbar-toggler-icon {
-  width: 20px;
-  height: 20px;
+.play-button .fa-icon {
+  margin-left: 5px;
 }
+
+.play-button:hover {
+  background-color: rgb(54, 120, 219); /* Slightly darker red on hover */
+}
+
+/* Pixelated effect */
+.play-button {
+  image-rendering: pixelated;
+}
+
+
 
 .Navbar .navbar-nav .nav-item {
   margin-right: 15px;
 }
 
+
+
+/* Default style for desktop */
 .Navbar .nav-link {
   color: #ffffff;
   font-size: 20px;
@@ -50,20 +67,30 @@
   text-decoration: none;
   cursor: pointer;
   font-family: 'Press Start 2P';
-
 }
+
+/* Style for mobile screens (e.g., screens with a maximum width of 768px) */
+@media (max-width: 768px) {
+  .Navbar .nav-link {
+    color: #000000; /* Set the color to black for mobile */
+  }
+}
+
 
 .Navbar .nav-link:hover {
   color: rgb(46, 139, 245);
-  text-shadow: 0 0 10px rgba(46, 139, 245, 0.4);
+  text-shadow: 0 0 20px rgb(83, 162, 252);
 }
 
 .btn {
   margin-right: 10px;
+  color: #ffffff;
 }
 
 .btn:focus {
   outline: none;
+  color: #ffffff;
+
 }
 
 .btn .bi {
@@ -72,8 +99,16 @@
   font-size: 20px;
 }
 
+.custom-toggler-icon {
+  color: white !important;
+}
+
+
+
 .btn .bi:hover {
   color: rgb(61, 126, 245);
+  color: #ffffff;
+
 }
 
 // /* Sticky Styles */
@@ -93,11 +128,11 @@
 //   background-color: transparent;
 // }
 
-// .Navbar.sticky .navbar-brand,
-// .Navbar.sticky .navbar-nav .nav-item,
-// .Navbar.sticky .btn .bi {
+//  .Navbar.sticky .navbar-brand,
+//  .Navbar.sticky .navbar-nav .nav-item,
+//  .Navbar.sticky .btn .bi {
 //   color: #161616;
-// }
+//  }
 
 // .Navbar.sticky .nav-link:hover,
 // .Navbar.sticky .btn .bi:hover {

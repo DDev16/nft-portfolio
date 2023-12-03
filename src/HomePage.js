@@ -9,7 +9,6 @@ import Collection from './components/DappVault';
 import QnA from './components/QnA';
 import Footer from './components/Footer';
 import Break from './components/Break';
-import Atom from './components/atom';
 
 
 function HomePage() {

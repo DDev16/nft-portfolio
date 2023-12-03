@@ -16,7 +16,7 @@ export default function Roadmap() {
   return (
     <section className="roadmap">
       <div className="container-fluid">
-        <h1 className="roadmap-title">Chaos <span>ROADMAP</span></h1>
+        <h1 className="roadmap-title">Chaotic <span>ROADMAP</span></h1>
         <div className="row">
           <div className="col-md-4">
             <div className="text-column">
@@ -25,13 +25,13 @@ export default function Roadmap() {
                   className={activeItem === 'NEW NFTS' ? 'active' : ''}
                   onClick={() => handleClick('NEW NFTS')}
                 >
-                  <span>01</span> NEW NFTS
+                  <span>01</span> PLANNING
                 </li>
                 <li
                   className={activeItem === 'WHITELIST MINTING' ? 'active' : ''}
                   onClick={() => handleClick('WHITELIST MINTING')}
                 >
-                  <span>02</span> WHITELIST MINTING
+                  <span>02</span> PreSale MINTING
                 </li>
                 <li
                   className={activeItem === 'WIRELAND NFT' ? 'active' : ''}
@@ -61,7 +61,7 @@ export default function Roadmap() {
                   <>
                     <p className="card-phase">Phase 1</p>
                     <h3 className="card-title">PLANNING</h3>
-                    <p className="card-text">Quality comes first. We took our time to plan out everything and build our production pipeline for high-quality artworks.</p>
+                    <p className="card-text">Quality comes first. We took our time to plan out everything and build our production pipeline for high-quality artworks and production ready Dapps.</p>
                     <hr />
                     <ul>
                       <li><i className="bi bi-check-circle"></i> Release website and logo</li>
@@ -131,13 +131,13 @@ export default function Roadmap() {
                 {activeItem === 'NEW NFTS' && (
                   <>
                     <p className="card-phase">Phase 2</p>
-                    <h3 className="card-title">PRODUCTION</h3>
-                    <p className="card-text">Starting the production on the procedurally generated planets and the smart contract for minting.</p>
+                    <h3 className="card-title">DEVELOPMENT</h3>
+                    <p className="card-text">Starting the production on the Psycho Chibi art, 3D animate models, the smart contract for minting dapp.</p>
                     <hr />
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Release website and logo</li>
-                      <li><i className="bi bi-check-circle"></i> Grow community</li>
-                      <li><i className="bi bi-check-circle"></i> Launch the project</li>
+                      <li><i className="bi bi-check-circle"></i> Design Pyshco Chibis art, and 3d models </li>
+                      <li><i className="bi bi-check-circle"></i> Write Smart contracts & deploy</li>
+                      <li><i className="bi bi-check-circle"></i> Build Front end and connect Smart Contracts</li>
                     </ul>
                   </>
                 )}
@@ -145,7 +145,7 @@ export default function Roadmap() {
                   <>
                     <p className="card-phase">Phase 4</p>
                     <h3 className="card-title">MINTING</h3>
-                    <p className="card-text">Per-Sale Minting is opened for our Whitelisted members. The price for whitelist minting will be 0.5 SOL.</p>
+                    <p className="card-text">Per-Sale Minting is opened for our members. The price for whitelist minting will be $5 in SGB.</p>
                     <hr />
                     <ul>
                       <li><i className="bi bi-check-circle"></i> Release website and logo</li>

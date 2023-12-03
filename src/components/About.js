@@ -16,11 +16,11 @@ export default function About() {
               <span>Chaos</span>
             </h3>
             <p className="about-content">Chaos signifies a creative journey that transcends boundaries, bringing together artists, collectors, and enthusiasts in a dynamic and vibrant community. We are dedicated to the pursuit of artistic excellence, innovation, and collaboration.</p>
-            <p className="about-content">Our mission is to sync and track the evolving world of digital art, unlock the value of creativity, and foster a community of over 50,000 members who share our passion for artistic expression.</p>
+            <p className="about-content">Our mission is to stay on the forefront of the evolving world of digital art with state of the art DApps, unlock the value of creativity, and foster a community who shares our passion for artistic expression and blockchain technology</p>
             <div className="row justify-content-around">
-              <Card title="Sync & track" value="93%" />
-              <Card title="Up value" value="2.5X" />
-              <Card title="Of members" value="50K+" />
+              <Card title="Dedication" value="100%" />
+              <Card title="Growth" value="&infin;" />
+              <Card title="Unlimited Potential" value="&infin;" />
             </div>
           </div>
 
@@ -42,7 +42,7 @@ export default function About() {
             <div className="col-md-3">
               <div className="box">
                 <i className="bi bi-person-hearts"></i>
-                <h2>100</h2>
+                <h2>0</h2>
                 <p>Community members</p>
               </div>
             </div>

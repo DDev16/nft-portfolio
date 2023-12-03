@@ -33,10 +33,11 @@
  
 }
 
+
+
 .content h2 {
-  font-family: 'Poppins', sans-serif;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
@@ -51,6 +52,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 50px;
+
 }
 
 .content .card {
@@ -81,9 +84,9 @@
 }
 
 .why .card .card-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Press Start 2P';
   color: #000;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
@@ -105,7 +108,7 @@
 /* Extra Small Devices (Mobile Phones) */
 @media (max-width: 575.98px) {
   .content h2 {
-    font-size: 48px;
+    font-size: 28px;
     margin-bottom: 60px;
   }
   .why .center-img {
@@ -122,7 +125,7 @@
 /* Small Devices (Tablets) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .content h2 {
-    font-size: 64px;
+    font-size: 34px;
     margin-bottom: 70px;
   }
   .why .center-img {
@@ -139,9 +142,11 @@
 /* Medium Devices (Laptops and Small Desktops) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .content h2 {
-    font-size: 72px;
+    font-size: 52px;
     margin-bottom: 90px;
   }
+
+ 
   .why .center-img {
     max-height: 500px;
   }
@@ -156,7 +161,7 @@
 /* Large Devices (Desktops and Large Screens) */
 @media (max-width: 992px) {
   .content h2 {
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 100px;
   }
 }

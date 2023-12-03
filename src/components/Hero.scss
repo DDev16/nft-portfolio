@@ -16,7 +16,7 @@
 .content h1 {
   font-family: 'Press Start 2P';
   color: #ffffff;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 100;
   line-height: 1;
   letter-spacing: normal;
@@ -28,8 +28,36 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 45px;
+
+}
+/* Add a class to style the glow effect */
+.glow-svg {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(147, 81, 247, 0.7); /* Light purple glow */
+  transition: box-shadow 0.5s ease-in-out;
 }
 
+/* Update the animation for the glow effect */
+.glow-svg:hover {
+  animation: glow 1s infinite alternate;
+}
+
+/* Define the glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(147, 81, 247, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(147, 81, 247, 0.9); /* Adjust the glow intensity as needed */
+  }
+}
+
+/* Your existing styles for .svg-wrapper-top, .svg-left-top, .svg-right-top, .svg-wrapper-bottom, .svg-left-bottom, .svg-right-bottom remain the same */
 .svg-wrapper-top {
   position: absolute;
   top: 25%;
@@ -64,7 +92,6 @@
   right: 20%;
   margin-left: 10px;
 }
-
 @keyframes bounce {
   0% {
     transform: translateY(-10px);
@@ -144,7 +171,7 @@
 /* Extra Small Devices (Mobile Phones) */
 @media (max-width: 575.98px) {
   .content h1 {
-    font-size: 28px;
+    font-size: 38px;
   }
   .panel .row .col .main-image {
     width: 110px;

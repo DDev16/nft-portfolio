@@ -11,12 +11,13 @@
   display: flex;
   align-items: flex-start;
   font-family: 'Press Start 2P', sans-serif;
+  
 }
 
 .roadmap-title {
   font-family: 'Press Start 2P', sans-serif;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 70px;
   
   font-weight: 700;
   line-height: 1;
@@ -41,7 +42,7 @@
 }
 
 .text-column li {
-  // font-family: 'Press Start 2P', sans-serif;
+ font-family: 'Press Start 2P', sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: #fdfdfd;
@@ -92,20 +93,16 @@
   border-radius: 10px;
 }
 
-.roadmap .card .card-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 10px;
-}
+
 
 .roadmap .card .card-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 100;
   color: #333;
   margin-bottom: 20px;
 }
+
 
 .roadmap .card ul {
   list-style: none;
@@ -127,7 +124,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 16px;
+
 }
+
 
 .sponsors {
   display: flex;
@@ -254,7 +254,7 @@
   }
 
   .roadmap .card .card-title {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .roadmap .card .card-text {

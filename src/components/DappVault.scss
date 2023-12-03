@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 .collection{
   max-width: 1200px;
   width: 100%;
@@ -6,8 +9,8 @@
 }
 
 .collection h1 {
-  font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  font-family: 'Press Start 2P', sans-serif;
+    color: #ffffff;
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
@@ -22,6 +25,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  
 }
 
 .collection-card {
@@ -32,6 +36,7 @@
   padding: 20px;
   margin-bottom: 30px;
   overflow-wrap: normal;
+  height: 600px;
 }
 
 .collection-card-header {
@@ -53,15 +58,18 @@
 }
 
 .collection-card-header-info h3 {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 700;
   margin: 0;
+  font-family: 'Press Start 2P', sans-serif;
+
 }
 
 .collection-card-header-info p {
   font-size: 14px;
   color: #888;
   margin: 0;
+  
 }
 
 .collection-card-images {
@@ -103,11 +111,37 @@
   width: fit-content;
   margin-bottom: 10px;
   margin-top: 20px;
+  margin-left: 30px;
   align-items: center;
   text-align: center;
+
   padding: 5px 20px;
   border-radius: 10px;
+  font-family: 'Press Start 2P', sans-serif;
+
 }
+
+@keyframes fallingBlocks {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.falling-title {
+  animation: fallingBlocks 1s ease-in-out forwards;
+}
+
+
+.falling-title.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 /* Hover effect for the button */
 .website-button:hover {
