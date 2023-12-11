@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body {
+  font-family: 'Press Start 2P', sans-serif;
+}
 
 .about {
   max-width: 1200px;
@@ -27,13 +30,15 @@
   text-align: start;
   margin-bottom: 25px;
   line-height: 1;
-font-family: 'Press Start 2P';
+ font-family: 'Press Start 2P';
 }
 
 .about-title span {
   background: linear-gradient(to right, #5101e3, #8300e7, #a900eb, #cc00ee, #eb00f0);
   background-clip: text;
   color: transparent;
+  font-family: 'Press Start 2P', sans-serif;
+
 }
 
 .about-content {

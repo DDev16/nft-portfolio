@@ -16,7 +16,7 @@ export default function Roadmap() {
   return (
     <section className="roadmap">
       <div className="container-fluid">
-        <h1 className="roadmap-title">Chaotic <span>ROADMAP</span></h1>
+        <h1 className="roadmap-title">Nirvanis <span>ROADMAP</span></h1>
         <div className="row">
           <div className="col-md-4">
             <div className="text-column">
@@ -31,25 +31,25 @@ export default function Roadmap() {
                   className={activeItem === 'WHITELIST MINTING' ? 'active' : ''}
                   onClick={() => handleClick('WHITELIST MINTING')}
                 >
-                  <span>02</span> PreSale MINTING
+                  <span>02</span> MINTING
                 </li>
                 <li
-                  className={activeItem === 'WIRELAND NFT' ? 'active' : ''}
-                  onClick={() => handleClick('WIRELAND NFT')}
+                  className={activeItem === 'Soft Staking' ? 'active' : ''}
+                  onClick={() => handleClick('Soft Staking')}
                 >
-                  <span>03</span> WIRELAND NFT
+                  <span>03</span> ECOSYSTEM DApps
                 </li>
                 <li
                   className={activeItem === 'METAVERSE' ? 'active' : ''}
                   onClick={() => handleClick('METAVERSE')}
                 >
-                  <span>04</span> METAVERSE
+                  <span>04</span> DApps Continued
                 </li>
                 <li
                   className={activeItem === 'LAUNCH' ? 'active' : ''}
                   onClick={() => handleClick('LAUNCH')}
                 >
-                  <span>05</span> LAUNCH
+                  <span>05</span> PreSale
                 </li>
               </ul>
             </div>
@@ -73,34 +73,34 @@ export default function Roadmap() {
                 {activeItem === 'WHITELIST MINTING' && (
                   <>
                     <p className="card-phase">Phase 3</p>
-                    <h3 className="card-title">LAUNCH</h3>
-                    <p className="card-text">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
+                    <h3 className="card-title">PreSale Minting</h3>
+                    <p className="card-text">Per-Sale Minting is opened for our members. The price for whitelist minting will be $5 in SGB.</p>
                     <hr />
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Release website and logo</li>
-                      <li><i className="bi bi-check-circle"></i> Grow community</li>
-                      <li><i className="bi bi-check-circle"></i> Launch the project</li>
+                      <li><i className="bi bi-check-circle"></i> Initial PreSale to Active followers</li>
+                      <li><i className="bi bi-check-circle"></i> Ensure Smooth Launch</li>
+                      <li><i className="bi bi-check-circle"></i> Activate Dapp</li>
                     </ul>
                   </>
                 )}
-                {activeItem === 'WIRELAND NFT' && (
+                {activeItem === 'Soft Staking' && (
                   <>
                     <p className="card-phase">Phase 5</p>
-                    <h3 className="card-title">TARGET</h3>
-                    <p className="card-text">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h3 className="card-title">Staking</h3>
+                    <p className="card-text">Build the Soft Staking Dapp, to be used to stake nfts trustlessly and earn Psycho Gems.</p>
                     <hr />
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Release website and logo</li>
-                      <li><i className="bi bi-check-circle"></i> Grow community</li>
-                      <li><i className="bi bi-check-circle"></i> Launch the project</li>
+                      <li><i className="bi bi-check-circle"></i> Activate Staking</li>
+                      <li><i className="bi bi-check-circle"></i> Market Staking</li>
+                      <li><i className="bi bi-check-circle"></i> Ensure Staking runs smooth</li>
                     </ul>
                   </>
                 )}
                 {activeItem === 'METAVERSE' && (
                   <>                    
                     <p className="card-phase">Phase 7</p>
-                    <h3 className="card-title">COMMUNITY</h3>
-                    <p className="card-text">Quality comes first. We took our time to plan out everything and build our production pipeline for high-quality artworks.</p>
+                    <h3 className="card-title">Token Bound NFTs</h3>
+                    <p className="card-text"> Token Bound NFTs offer a game changing standard called ERC6551, this standard allows us to turn regular NFTs into their own wallets, thus allowing those nfts to store ERC20, ERC721, ERC1155 tokens within the NFT itself. Allowing more value to be held and trasnferred within one NFT.</p>
                     <hr />
                     <ul>
                       <li><i className="bi bi-check-circle"></i> Release website and logo</li>
@@ -144,26 +144,26 @@ export default function Roadmap() {
                 {activeItem === 'WHITELIST MINTING' && (
                   <>
                     <p className="card-phase">Phase 4</p>
-                    <h3 className="card-title">MINTING</h3>
-                    <p className="card-text">Per-Sale Minting is opened for our members. The price for whitelist minting will be $5 in SGB.</p>
+                    <h3 className="card-title">Public MINTING</h3>
+                    <p className="card-text">Per-Sale Minting is opened for our members. The price for whitelist minting will be $10 in SGB.</p>
                     <hr />
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Release website and logo</li>
-                      <li><i className="bi bi-check-circle"></i> Grow community</li>
-                      <li><i className="bi bi-check-circle"></i> Launch the project</li>
+                      <li><i className="bi bi-check-circle"></i> Release to the Public</li>
+                      <li><i className="bi bi-check-circle"></i> Ensure Smooth Minting</li>
+                      <li><i className="bi bi-check-circle"></i> Market & Grow Community</li>
                     </ul>
                   </>
                 )}
-                {activeItem === 'WIRELAND NFT' && (
+                {activeItem === 'Soft Staking' && (
                   <>
                     <p className="card-phase">Phase 6</p>
-                    <h3 className="card-title">RESEARCH</h3>
-                    <p className="card-text">A complete account of the system, and expound the actual teachings of the great explorer of the truth.</p>
+                    <h3 className="card-title">Evolution Dapp</h3>
+                    <p className="card-text">DApp to Evolve Pyshco Chibis into Zombie Psycho Chibis, users will need Psycho gems to evolve.</p>
                     <hr />
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Release website and logo</li>
-                      <li><i className="bi bi-check-circle"></i> Grow community</li>
-                      <li><i className="bi bi-check-circle"></i> Launch the project</li>
+                      <li><i className="bi bi-check-circle"></i> Activate Evolution Dapp</li>
+                      <li><i className="bi bi-check-circle"></i> Market Evolution Dapp</li>
+                      <li><i className="bi bi-check-circle"></i> Zombie Giveaway </li>
                     </ul>
                   </>
                 )}

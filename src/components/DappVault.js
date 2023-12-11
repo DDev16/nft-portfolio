@@ -16,7 +16,7 @@ export default function Collection() {
       name: "Soft Staking Dapp",
       username: "Here you can stake your NFTs and earn Psycho Gem Rewards! Psycho gems will be used to mint future NFTs, evolve nfts,  open loot boxes, and will be used in our upcoming game!",
       profileImg: require("../images/erc20.png"),
-      image1: require("../images/gems (2).png"),
+      image1: require("../images/AICHIBI  (79).png"),
       website: "https://example.com/metaverse",
     },
     {
@@ -29,26 +29,40 @@ export default function Collection() {
     {
       name: "Evolution Dapp",
       username: "Here you can evolve your NFTs to the next level! Each NFT is evolved using psycho gems. Each level will have a different rarity and will be more valuable than the previous level.",
-      profileImg: require("../images/05.jpg"),
-      image1: require("../images/evomp4 (1).gif"),
+      profileImg: require("../images/DALL·E 2023-12-10 21.28.38 - A logo design for a Green Zombie Chibi concept, focusing solely on imagery with no text. The logo is a stylized, image-only representation of a green .png"),
+      image1: require("../images/DALL·E 2023-12-10 21.24.56 - A hyper-realistic, front-facing profile picture of a Green Zombie Chibi. This chibi character, depicted as a green zombie, is situated in a cave full .png"),
       website: "https://example.com/alec-art",
     },
     {
-      name: "#Metaverse",
-      username: "Our Metaverse is build using react.js, javascript, and three.js. We are currently working on building our metaverse and will be releasing it soon! Our metaverse will be a 3D world where you can interact with other holders, play games, and explore!",
-      profileImg: require("../images/19.jpg"),
-      image1: require("../images/03.jpg"),
+      name: "Nirvanis",
+      username: "Our Metaverse is build using react.js, javascript, and three.js. We are currently working on building our metaverse! Our metaverse will be a 3D world where you can interact with other holders, play games, and explore!",
+      profileImg: require("../images/newlogo.png"),
+      image1: require("../images/untitled (5).mp4"),
       website: "https://example.com/metaverse",
     },
     {
-      name: "Governor Dapp",
-      username: "Here you can vote on proposals and help shape the future of Psycho Chibis!",
-      profileImg: require("../images/05.jpg"),
-      image1: require("../images/05.jpg"),
+      name: "Token Bound Dapp",
+      username: "Here you can turn your NFTs into Token Bound NFTs! Token Bound NFTS are NFTs that act as a wallet, meaning you can store tokens in your NFTs! You can also send tokens to other NFTs!",
+      profileImg: require("../images/DALL·E 2023-12-10 22.08.07 - A logo design for 'Token Bound NFTs', focusing on the concept of blockchain and digital art. The logo should visually represent the idea of NFTs (Non-.png"),
+      image1: require("../images/1_6JDKigoMhAtzdDfDl_eJ2Q.jpg"),
       website: "https://example.com/alec-art",
     },
     // Add website URLs for other collections here
   ];
+
+  const renderMedia = (media) => {
+    if (media.endsWith('.mp4')) {
+      return (
+        <video width="320" height="240" autoPlay loop muted>
+          <source src={media} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      );
+    } else {
+      return <img src={media} alt="Image1" />;
+    }
+  };
+  
 
   return (
     <section className="collection">
@@ -72,12 +86,12 @@ export default function Collection() {
                 </div>
                 <div className="collection-card-images">
                   <div className="collection-card-left-image">
-                    <img src={collection.image1} alt="Image1" />
+                    {renderMedia(collection.image1)}
                   </div>
                 </div>
                 <div className="collection-card-button">
                   <a href={collection.website} target="_blank" rel="noopener noreferrer">
-                    <button className="website-button">Visit Website</button>
+                    <button className="website-button">Visit DApp</button>
                   </a>
                 </div>
               </div>

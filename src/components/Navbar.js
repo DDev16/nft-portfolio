@@ -4,7 +4,7 @@ import logo from '../images/newlogo.png';
 import './Navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
-import music from "../images/music.mp3";
+import music from "../images/onlymp3.to - Zerb Sofiya Nzau Mwaki-FLumSF4YjD8-192k-1702272242.mp3";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -115,6 +115,7 @@ function Navbar() {
                   >
                     Dapp Vault
                   </Link>
+                  
                 </li>
                 <audio ref={audioRef}>
         <source src={music} type="audio/mpeg" />

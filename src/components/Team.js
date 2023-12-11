@@ -8,24 +8,24 @@ const teamMembers = [
     {
       name: "Chaos",
       jobTitle: "CEO/Lead Developer/Graphics Designer",
-      image: require("../images/01.jpg"),
+      image: require("../images/AICHIBI  (15).png"),
     },
     {
       name: "The Great Gambino",
       jobTitle: "Artist",
-      image: require("../images/10.jpg"),
+      image: require("../images/AICHIBI  (80).png"),
     },
   ],
   [
     {
       name: "Hiring",
       jobTitle: "Moderator",
-      image: require("../images/04.jpg"),
+      image: require("../images/bee keeper.png"),
     },
     {
       name: "Hiring",
       jobTitle: "Moderator",
-      image: require("../images/08.jpg"),
+      image: require("../images/AICHIBI  (76).png"),
     },
   ],
  

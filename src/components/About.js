@@ -13,9 +13,9 @@ export default function About() {
           
           <div className="col-md-6 panel-content">
             <h3 className="about-title">ABOUT<br />
-              <span>Chaos</span>
+              <span>Nirvanis</span>
             </h3>
-            <p className="about-content">Chaos signifies a creative journey that transcends boundaries, bringing together artists, collectors, and enthusiasts in a dynamic and vibrant community. We are dedicated to the pursuit of artistic excellence, innovation, and collaboration.</p>
+            <p className="about-content">Nirvanis signifies a creative journey that transcends boundaries, bringing together artists, collectors, and enthusiasts in a dynamic and vibrant community. We are dedicated to the pursuit of artistic excellence, innovation, and collaboration.</p>
             <p className="about-content">Our mission is to stay on the forefront of the evolving world of digital art with state of the art DApps, unlock the value of creativity, and foster a community who shares our passion for artistic expression and blockchain technology</p>
             <div className="row justify-content-around">
               <Card title="Dedication" value="100%" />
